@@ -34,7 +34,7 @@ After completing this course, students should be able to:
 
 * *Course/lecture*: David Richey
     - Email: richey.david.j@gmail.com
-    - Office hours: Fridays 8:00-10:00, 109 Condon [(map)](https://map.uoregon.edu/73706a822)
+    - Office hours: MW 10-11 am, 245 Columbia [(map)](https://map.uoregon.edu/73706a822)
 * *Lab*: Riley Anderson
     - Email: roa@uoregon.edu
     - Office hours: TBA, Reed Seminar Room Knight Library[(map)](https://map.uoregon.edu/83ce7039c)
