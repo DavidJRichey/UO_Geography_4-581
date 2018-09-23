@@ -33,13 +33,13 @@ After completing this course, students should be able to:
 #### Instructors
 
 * *Course/lecture*: David Richey
-    - Email: richey.david.j@gmail.com
+    - Email: richey.david.j@gmail.com<richey.david.j@gmail.com>
     - Office hours: MW 10-11 am, 245 Columbia [(map)](https://map.uoregon.edu/73706a822)
 * *Lab*: Riley Anderson
-    - Email: roa@uoregon.edu
+    - Email: roa@uoregon.edu<roa@uoregon.edu>
     - Office hours: TBA, Reed Seminar Room Knight Library[(map)](https://map.uoregon.edu/83ce7039c)
 * *Lab*: Antoine Nzeyimana
-    - Email: anzeyima@uoregon.edu
+    - Email: anzeyima@uoregon.edu<anzeyima@uoregon.edu>
     - Office hours: TBA, Reed Seminar Room Knight Library[(map)](https://map.uoregon.edu/83ce7039c)
 
 #### Texts
