@@ -58,7 +58,7 @@ After completing this course, students should be able to:
 
 * 10% — In-class activities. Due at the end of classtime.
 * 40% — Lab assignments. Due at the start of the next lab's session.
-* 30% — Tests: Three will be conducted, in-class. Due at the end of classtime.
+* 30% — Tests: Two will be conducted, in-class. Due at the end of classtime.
 * 20% — Final project. Due on the date/time of our scheduled finals time.
 
 **Late work will be reduced in value by 10% per day late. No late tests or final projects will be accepted.**
@@ -96,7 +96,7 @@ There is a handy ["Lab 0"](https://DavidJRichey.github.io/UO_Geography_4-581/lab
 
 #### Tests
 
-Tests will not be cumulative, and will directly relate to content covered in the lecture portion of the class. The last test will be taken during the final week of class; concentrate on your final project during finals week.
+Tests will not be cumulative, and will directly relate to content covered in the lecture portion of the class. 
 
 #### Final Project
 
@@ -121,8 +121,8 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * Longley et al Chapters 1 & 2 (sections 2.3+ optional).
 * **Lecture**:
-  * [Mon September 24 — Lecture 1: Class introduction.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_01.html.html)
-  * [Wed September 26 — Lecture 2: What Is GIS?](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_02.html.html)
+  * [Mon September 24 — Lecture 1: Class introduction.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_01.html)
+  * [Wed September 26 — Lecture 2: What Is GIS?](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_02.html)
 * **Lab**:
   * [Lab 0: Filesystem and Servers in SSIL](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_0.html)
   * [Lab 1: Using GIS with ArcMap and SSIL](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_1.html)
@@ -178,8 +178,8 @@ Graduate students will have two additional components to their final project. Th
   * Buckley, "Make Maps People Want to Look At" in ArcUser, Winter 2012.
     * [https://www.esri.com/news/arcuser/0112/files/design-principles.pdf](https://www.esri.com/news/arcuser/0112/files/design-principles.pdf)
 * **Lecture**:
-  * Mon October 29 — Lecture 10: Maps.
-  * Wed October 31 — Lecture 11: Maps II.
+  * Mon October 29 — Lecture 10: Maps — Elements, symbolization, classification..
+  * Wed October 31 — Lecture 11: Maps II — Visualization & design..
 * **Lab**:
   * Lab 6: Working with Raster Data—Elevation.
 
@@ -202,7 +202,7 @@ Graduate students will have two additional components to their final project. Th
   * None.
 * **Lecture**:
   * Mon November 12 — Lecture 14: Project Mangement.
-  * Wed November 14 — Test 2 (covers lectures 7-12).
+  * Wed November 14 — Test 2 (covers lectures 7-14).
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (continued from previous week).
 
