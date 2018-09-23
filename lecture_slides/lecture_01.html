@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lecture 1: Class introduction</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 { font-family: 'Yanone Kaffeesatz'; font-weight: normal; }
+      .red { color: #fa0000; }
+      .white { color: #f3f3f3; }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .footnote { position: absolute; bottom: 1em; font-size: 0.5em;}
+      .image-10 img { width: 10%; }
+      .image-20 img { width: 20%; }
+      .image-30 img { width: 30%; }
+      .image-40 img { width: 40%; }
+      .image-50 img { width: 50%; }
+      .image-60 img { width: 60%; }
+      .image-70 img { width: 70%; }
+      .image-80 img { width: 80%; }
+      .image-90 img {width: 90%;}
+      .image-100 img {width: 100%;}
+      .image-110 img {width: 110%;}
+      .image-120 img {width: 120%;}
+      .inverse {
+        background: #272822;
+        color: #777872;
+        <!--text-shadow: 0 0 20px #333;-->
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+
+name: base
+layout: true
+.footnote[GIScience I, Spring 2017]
+
+---
+
+class: inverse, middle
+# Lecture 1: Class introduction
+
+???
+  
+* Class is GIScience I, GEOG 4/581.
+
+---
+
+## Instructors
+
+### *Course/lecture:* Jacob Blair
+  - Email: jblair3@uoregon.edu
+  - Office hours: Fridays 8:00-10:00, 109 Condon [(map)](https://map.uoregon.edu/99b67d6a9)
+  - Work as a GIS Analyst/Developer for Lane Council of Governments (LCOG).
+
+???
+
+* Not a professor, doctor, etc.
+* Just a master's degree and a decade+ working GIS industry.
+* I am a GIS professional, working in the industry for nearly 15 years.
+* Currently the "data plumber" and admin for in-house GIS team and a multi-government data-sharing partnership.
+* Never even taught a class beyond being a GE for a class like this.
+
+---
+
+## Instructors (cont.)
+
+### *Lab:* Dean Olson
+  - Email: deano@uoregon.edu
+
+### *Lab:* William Chang
+  - Email: cchang3@uoregon.edu
+
+???
+
+* You'll get to know GEs better via your labs.
+* Don't hesitate to use them.
+
+---
+
+## Description
+
+This class is an introduction to concepts behind organizing, analyzing, and visually presenting geospatial information. This class addresses three major questions:
+
+1. How can one sense and represent the variation in the world around us?
+
+2. How to record, recall, and analyze this information?
+
+3. How to communicate and discuss this information with others?
+
+GIScience I explores these questions though the **applied** use of software designed to facilitate the **collection, analysis, symbolization, and communication** of information about the world; that is to turn observations of the real world into information useful for acting in the real world. This is often done with maps, and much of the work will involve the creation of maps.
+
+???
+
+* Note the 'applied' part.
+* I'll be talking about these things in class conceptually, then you'll apply them in the lab.
+* Key to taking something from this class is to connect the two.
+* May seem like learning button-pushing, but those buttons are pushed in service of something.
+
+---
+
+## Objectives
+
+After completing this course, students should be able to:
+
+* Plan and execute basic GIS analysis using a software application framework.
+
+* Communicate the results of an analysis through language and graphics.
+
+* Articulate the characteristics of and differences between data representations.
+
+* Identify and critique choices that made in map design.
+
+* Critically evaluate geospatial arguments in popular media.
+
+* Develop skills in information-seeking.
+
+???
+
+* Application: we'll be using ArcGIS Desktop (primarily ArcMap).
+* There are many others. Some similar, some very different. Concepts cut across them all.
+* There is lots of jargon: take a breath. Even pros use all kinds of names, forget what means what.
+  - Ex.field vs. attribute vs. column; geocode vs. overlay; what the heck does scale mean?
+
+---
+
+## Texts
+
+* *Geographic Information Science and Systems*, Fourth Edition (2015), by Longley, et al.
+
+* *Supplemental reading will be available via links in schedule or the Canvas class site.*
+
+???
+
+* I'm not particularly a big fan of this textbook.
+  * Used by other instructors.
+  * I hear it is used for the follow-up class.
+  * Parts we read will be useful to prepare you for the week's lectures.
+
+* Will try to fill-in with supplemental readings **where useful**.
+  * Not trying to pile on for make-work.
+
+---
+
+Class Materials:
+
+* [https://jblairpdx.github.io/GIScience_I/](https://jblairpdx.github.io/GIScience_I/)
+
+* Link also available via class Canvas website.
+
+---
+
+## Locations
+
+* *Lecture:* [101 Knight Library](https://library.uoregon.edu/classrooms/101LIB) [(map)](https://map.uoregon.edu/5980f3a0b)
+
+* *Lab:* [Social Sciences Instructional Laboratory (SSIL), 442 McKenzie](https://ssil.uoregon.edu/) [(map)](https://map.uoregon.edu/e11e8713c)
+
+---
+
+## Grading
+
+* 10% — In-class activities. Due at the end of classtime.
+
+* 40% — Lab assignments. Due at the start of the next lab's session.
+
+* 30% — Tests: Three will be conducted, in-class. Due at the end of classtime.
+
+* 20% — Final project. Due on the date/time of our scheduled finals time.
+
+**Late work will be reduced in value by 10% per day late. No late tests or final projects will be accepted.**
+
+???
+
+* Labs/project worth more than tests.
+
+---
+
+## In-class activities
+
+* During some classes, we will pause the lecture to do an in-class activity of some sort.
+  * These will be interactive: the activity will involve the entire class or a small group.
+  * Each person/group will turn in a paper with some responses related to the activity, so be sure to have paper on hand.
+
+* Activities will relate directly to the lecture subject.
+
+* They will not be hard: just engage the group and the content, and you will earn your points.
+
+???
+
+* Bring paper: knowing you particpated involves getting a paper with your name on it turned-in.
+  * Just do it and engage content, will get the 10%.
+
+---
+
+## Lab Sections
+
+* There are four lab sections for the course.
+
+* Each lab assignment will made be available by applicable lab session.
+
+* During the lab section you have registered for, the SSIL computer lab is reserved for your use and a GE will be available to present material and answer questions.
+
+**If there is space available in the other sections—and the GE for it gives their permission—you may sit in as a guest. Please understand that the GE must prioritize the students registered for that section.**
+
+---
+
+## Lab Sections (cont.)
+
+* Plan ahead, and **save often** while working; computers and software can be unpredictable and crash when one least expects (or wants).
+
+* Please save your lab files to your student folder on the SSIL server. Feel free to save copies elsewhere.
+
+???
+
+* GIS software crashes **a lot**.
+* Student folder: accessible by myself, class GEs, SSIL staff. We can help.
+  * Local (C:\) drive on SSIL workstations is wiped clean regularly. You cannot guarantee anything you put there will remain there after you end your current session.
+
+---
+
+## Lab Sections (cont.)
+
+* Most lab assignments will be due at the start of the lab the next week.
+
+* The exception for this is Lab 7, which will be due in two weeks
+  * This due-week also includes Memorial Day.
+  * If your lab is that Monday, please consider the next school day the due date.
+
+* You will turn in your lab work digitally via Canvas. Be sure to turn them in before or within the first ten minutes of the lab on their assigned due date.
+
+---
+
+## Lab Sections (cont.)
+
+* Assignments may require extra work outside normal lab hours to complete.
+
+* Be proactive in ensuring you have access to the tools required to complete it on time.
+  * Extra SSIL time , VPN, and Canvas access when required.
+    * SSIL hours at bottom of https://ssil.uoregon.edu/.
+    * Specific lab calendars (avoid classtimes) at https://ssil.uoregon.edu/calendars/.
+
+---
+
+## Lab Sections (cont.)
+
+* Lab 7 is twice as much of your grade as the other labs are.
+
+* Doing the math:
+  * Labs 1-6 are 5% each of your class grade.
+  * Lab 7 is 10%.
+
+???
+
+* Lab 7 is a more involved GIS analysis project, involving many different steps based on what you've learned in class.
+
+---
+
+## Tests
+
+* Tests will not be cumulative, and will directly relate to content covered in the lecture portion of the class.
+
+* The final test will be taken during the final week of class; concentrate on your final project during finals week.
+
+---
+
+## Final Project
+
+In lieu of a lab in the final weeks of the term and cumulative final, students will undertake a final project, to be completed by the end of the time a final exam would be scheduled if we had one (Tuesday, June 13th at 12:15PM).
+
+* The project will be not unlike the labs you will have completed, except the data, analysis, and products of it will be designed by you rather than the instructor.
+
+* As you progress through the class, be thinking about possible topics for your final project.
+
+* In week 7, we will discuss the project in detail, and do an in-class activity related to fine-tuning ideas.
+
+* A 'proposal', outlining your intentions for the content of the project is due at the beginning of week 10.
+
+---
+
+## Final Project (cont.)
+
+Graduate students will have two additional components to their final project.
+
+* The first is a description of the analysis you did (4-10 pages), or a related literature review to the subject matter. Be sure to provide citations and reasoning for your methodology.
+
+* The second is to present your project briefly in the last week of class.
+
+???
+
+* Undergrads: these presentations involve you too as well - as an audience.
+* We will bring up final project planning more as we approach the later parts of the term.
+
+
+---
+
+## Schedule
+
+#### Week 1
+
+* **Lecture**:
+  * Mon Apr 03 — Lecture 1: Class introduction.
+  * Wed Apr 05 — Lecture 2: What Is GIS.
+* **Lab**:
+  * Lab 1: Using GIS with ArcMap and SSIL.
+
+#### Week 2
+
+* **Lecture**:
+  * Mon Apr 10 — Lecture 3: Representing the Earth; georeferencing.
+  * Wed Apr 12 — Lecture 4: Coordinate systems and projections.
+* **Lab**:
+  * Lab 2: Projections.
+
+---
+
+## Schedule (cont.)
+
+
+#### Week 3
+
+* **Lecture**:
+  * Mon Apr 17 — Lecture 5: Geospatial data models.
+  * Wed Apr 19 — Lecture 6: Attribute data — Types & queries.
+* **Lab**:
+  * Lab 3: Spatial Data Types and Querying Values.
+
+#### Week 4
+
+* **Lecture**:
+  * Mon Apr 24 — Test 1: Lectures 1-6.
+  * Wed Apr 26 — Lecture 7: Combining Data — Attribute joins & spatial analysis.
+* **Lab**:
+  * Lab 4: Spatial Selection and Attribute Queries.
+
+---
+
+## Schedule (cont.)
+
+* **Lecture**:
+  * Mon May 01 — Lecture 8: Spatial analysis — A look in the toolbox.
+  * Wed May 03 — Lecture 9: GIS models.
+* **Lab**:
+  * Lab 5: Siting Food Relief Centers.
+
+#### Week 6
+
+* **Lecture**:
+  * Mon May 08 — Lecture 10: Maps — Elements, symbolization, classification.
+  * Wed May 10 — Lecture 11: Maps II — Visualization & design.
+* **Lab**:
+  * Lab 6: Working with Raster Data — Elevation.
+
+---
+
+## Schedule (cont.)
+
+#### Week 7
+
+* **Lecture**:
+  * Mon May 15 — Test 2: Lectures 7-11.
+  * Wed May 17 — Lecture 12: GIS project design; introducing the final project.
+* **Lab**:
+  * Lab 7: Vegetation Report (due in two weeks).
+
+#### Week 8
+
+* **Lecture**:
+  * Mon May 22 — Guest speaker: David Richey.
+  * Wed May 24 — Lecture 13: Data collection; data quality.
+* **Lab**:
+  * Lab 7: Vegetation Report (continued from previous week).
+
+---
+
+## Schedule (cont.)
+
+#### Week 9
+
+* **Lecture**:
+  * Mon May 29 — Memorial Day Holiday: No class.
+  * Wed May 31 — Lecture 14: GIScience in work and life.
+* **Lab**:
+  * Final project: Work on in lab session.
+
+#### Week 10
+
+* **Lecture**:
+  * Mon Jun 05 — Test 3: Lectures 12-14.
+    * Final project proposal due.
+  * Wed Jun 07 — Graduate student presentations (not optional: will be related in-class activity).
+* **Lab**:
+  * Final project: Work on in lab session.
+  * Project proposal due at beginning of week's lab session.
+
+---
+
+## Student Responsibilities: Conduct
+
+The University Student Conduct Code is available to read at [https://dos.uoregon.edu/conduct](https://dos.uoregon.edu/conduct).
+
+---
+
+## Activity: You and your interests
+
+It will be extremely helpful to me communicating with students to have more than just a name.
+
+* Write down as best you can on a piece of paper:
+  * Name (legal and preferred).
+  * Year/major.
+  * How do you think GIS will relate to your professional interests?
+  * How do you think GIS will relate to your personal interests?
+
+</textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
