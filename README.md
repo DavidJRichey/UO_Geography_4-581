@@ -50,7 +50,7 @@ After completing this course, students should be able to:
 
 #### Locations
 
-* *Lecture*: [101 Knight Library](https://library.uoregon.edu/classrooms/221MCK) [(map)](https://map.uoregon.edu/f8546c34b)
+* *Lecture*: [221 McKenzie Hall](https://library.uoregon.edu/classrooms/221MCK) [(map)](https://map.uoregon.edu/f8546c34b)
 * *Lab*: [Social Sciences Instructional Laboratory (SSIL), 445 McKenzie](https://ssil.uoregon.edu/) [(map)](https://map.uoregon.edu/7b8128403)
 
 
