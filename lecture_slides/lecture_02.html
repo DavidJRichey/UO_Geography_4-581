@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lecture 2: What Is GIS?</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 { font-family: 'Yanone Kaffeesatz'; font-weight: normal; }
+      .red { color: #fa0000; }
+      .white { color: #f3f3f3; }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .footnote { position: absolute; bottom: 1em; font-size: 0.5em;}
+      .image-10 img { width: 10%; }
+      .image-20 img { width: 20%; }
+      .image-30 img { width: 30%; }
+      .image-40 img { width: 40%; }
+      .image-50 img { width: 50%; }
+      .image-60 img { width: 60%; }
+      .image-70 img { width: 70%; }
+      .image-80 img { width: 80%; }
+      .image-90 img {width: 90%;}
+      .image-100 img {width: 100%;}
+      .image-110 img {width: 110%;}
+      .image-120 img {width: 120%;}
+      .inverse {
+        background: #272822;
+        color: #777872;
+        <!--text-shadow: 0 0 20px #333;-->
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+      /* Two-column layout */
+      .left-column { width: 45%; float: left; }
+      .right-column { width: 45%; float: right; }
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+
+name: base
+layout: true
+.footnote[GIScience I, Spring 2017]
+
+---
+
+class: inverse, middle
+# Lecture 2: What Is GIS?
+
+---
+
+## Geographic Information System
+
+* Term first used in mid-1960s: Canada Geographics Information System (CGIS) - Roger Tomlinson.
+
+* An information system, but for geographic information.
+  * What makes geographic information all that special?
+
+---
+
+## "Spatial is special" - Is it?
+
+* A commonly-quoted phrase: "80% of all information has a spatial component."
+  * No solid evidence: a guess, or including a lot of low-resolution data and noise.
+  * "That geo quote keeps us all in our jobs. Best not go poking around to see if it's true." --John Fagan.
+
+---
+
+## "Spatial Is Special" - It is!
+
+* But there amongst the exaggeration is truth.
+  * Entities and events are likely to occur *somewhere*.
+
+* Working with spatial information more complex than other types.
+    * Adding two numbers vs. adding two areas.
+
+* Tobler's First Law of Geography: "Everything is related to everything else, but near things are more related than distant things."
+  * Think about: weather, topography, dialect, demographics...
+
+---
+
+## What is a geographic information system?
+
+GIS is technology.
+
+> "A geographic information system is a facility for preparing, presenting, and interpreting facts that pertain to the surface of the earth. This is a broad definition...
+>
+> A considerably narrower definition, however, is more often employed. In common parlance, a geographic information system or GIS is a configuration of computer hardware and software specifically designed for the acquisition, maintenance, and use of cartographic data."
+>
+> (C. Dana Tomlin, 1990).
+<!-- https://www.colorado.edu/geography/gcraft/notes/intro/intro.html-->
+
+* Kind of tautological: "GIS is the things we need to do GIS."
+
+???
+
+* A bit like saying "Cooking is the things we need to eat."
+
+---
+
+## What is a geographic information system? (cont.)
+
+GIS is technology + data + people.
+
+> "[A GIS is] an organized collection of computer hardware, software, geographic data, and personnel designed to efficiently capture, store, update, manipulate, analyze, and display all forms of geographically referenced information."
+>
+> (Esri, 1990)
+
+---
+
+## What is a geographic information system? (cont.)
+
+GIS *integrates* technology.
+
+* GIS links a number of discrete technologies to create a whole greater than the parts.
+  * Cartography and mapping;
+  * CAD;
+  * Databases;
+  * Statistics;
+  * Math (geometry/trignometry/topology);
+  * Image processing;
+  * Remote sensing;
+  * Computer graphics;
+
+* Over its history, GIS picked up extra technologies to extend the ones already present.
+
+* Anyone familiar with any of these technologies will see the influences in modern GIS software.
+
+---
+
+## What is a geographic information system? (cont.)
+
+GIS is the **process** of using integrated technologies + data.
+
+.left-column[
+1. Locate entities in the world.
+
+2. Represent the entities digitally.
+
+3. Describe the entities.
+
+4. Process, integrate, analyze.
+
+5. Communicate the results.
+
+6. Interpret, make decisions, give feedback.
+
+* This is the structure this class is organized by.
+  ]
+
+.right-column[
+.image-100[![GIS Model Cycle (Longley et al 2015)](media/Longley_et_al_Figure_7.1.jpg)]
+  ]
+
+---
+
+## Step 1: Locate entities in the world
+
+.left-column[
+.image-100[![Mobile survey data collections in GIS applications in Nepal (http://gis.net.np/mobile-survey-data-collection-in-gis-applications/)](media/Survey-App-to-monitor-Nepal-gis.net_.np_-1024x768.jpg)]
+  ]
+.right-column[
+* Collecting where they happen.
+  * GPS, surveying, fieldwork.
+  * Remote capture: images (satellite, airplane, car, etc.); sensors.
+* Coding a spatial location onto collected information.
+  ]
+---
+
+## Step 2: Represent the entities digitally
+
+.image-90[![The Real World -> GIS World Model (http://henrico.us/it/gis/)](media/Capture9.png)]
+
+* How should your data appear in digital form?
+* What generalizations & distortions can we accept for our purposes?
+
+---
+
+## Step 3: Describe the entities
+
+Attributes: individual values describing aspects of the object.
+
+.left-column[
+.image-100[![Parcel atrributes accessed using the parcel ID (https://desktop.arcgis.com/en/arcmap/latest/manage-data/tables/creating-tables.htm)](media/GUID-39A8F674-382B-49FE-9EFA-97E6B76571C8-web.gif)]
+  ]
+.right-column[
+* Data values used to describe an entity, beyond coding the location.
+* Data-wise, at the core of the integrative definition. Connects location to:
+  * Databases;
+  * Map symbolization;
+  * Statistical analysis;
+* Geometry/shape is first-order description attribute.
+  * Properties: area, perimeter, etc.;
+  * Statistics: centrality, dispersion, etc.;
+  * Literal: describes the entity;
+  ]
+
+---
+
+## Step 4. Process, integrate, analyze
+
+.image-110[![The layout of a suitability model (https://desktop.arcgis.com/en/arcmap/latest/analyze/main/what-is-geoprocessing.htm)](media/GUID-A4A78FE3-3B8F-48DD-BD7F-9BD7DE04D886-web.png)]
+
+* What methods need done to make data able to answer our questions/find patterns/inform decisions?
+* Combining, excluding, or altering data that share location or description (attributes), e.g.
+  * Integrating multiple sources of data.
+  * Adding attributes (e.g. districts) from data that spatially overlaps your data.
+  * Limiting your study area to a specific region.
+  * Creating new spatial entities from your data to represent a new, related entity (e.g. buffer zones).
+
+---
+
+## Step 5: Communicate the results
+
+Maps; reports; "the answer".
+
+.image-80[![Esri's 'Maps We Love'](media/Maps_We_Love_Screenshot.png)]
+
+[https://www.esri.com/products/maps-we-love](https://www.esri.com/products/maps-we-love)
+
+---
+
+## Step 6: Interpret, make decisions, give feedback
+
+.image-100[![https://www.climate-eval.org/blog/answer-42-data-information-and-knowledge](media/Data-information-knowledge-wisdom.png)]
+
+---
+
+## Example of a GIS: Regional Land Information Database of Lane County (RLID)
+
+.image-90[![https://rlid.org/](media/RLID_Stages.png)]
+
+* Website & database with highly-integrated information organized for easy use.
+* Primary point of reference for data is land/property, embodied by taxlots & site addresses.
+* 100+ integrations via spatial methods (overlays, distance/proximity).
+* Even more via shared identifiers.
+
+---
+
+## In-class activity: GIS process components
+
+* Get in groups of three or four.
+* Put your names on a piece of paper.
+* Answer for one of the following questions (left) how you could approach the steps in the GIS process (right). Answer in general terms, but try to be thoughtful/creative about it.
+
+.left-column[
+* Where should we open a new coffee/donut shop?
+* Can we predict affected areas from a hazardous spill?
+* Which parts of the city should public works staff go to for cleanup/graffiti/landscaping?
+]
+.right-column[
+1. Locate entities in the world.
+2. Represent the entities digitally.
+3. Describe the entities.
+4. Process, integrate, analyze.
+5. Communicate the results.
+6. Interpret, make decisions, give feedback.
+  ]
+
+???
+
+* Coffee/donut.
+  1. Existing shops/competitors? Available properties? Water features?
+  2. Points? Property lots?
+  3. Attributes: property cost, sales information?
+  4. Combine with neighborhood demographics/economics; distance to positive factors (quality customers, venues); distance buffer around existing shops?
+  5. Map of collected entities; buffers.
+* Hazardous spill.
+  1. Spill location? Vulnerable property types (homes, utilities)?
+  2. Point, maybe expand to area as more information collected?
+  3. Spill type; quantity?
+  4. Use slope representation to estimate direction of flow? Simpler: buffers of incrementing distance?
+  5. Map of potential areas to evacuate/verify?
+* City staff.
+  1. Complaint locations? Neighborhood/zone areas?
+  2. Complaints as points? Maybe buffered to areas (uncertainty)?
+  3. Complaint types (graffiti, landscaping, trash, disrepair)?
+  4. Overlay complaints on neighborhood areas (counts)? Overlay ownership types (public or private)? Group by nearest road right-of-way?
+  5. Map (of course)? Maybe a list?
+
+</textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
