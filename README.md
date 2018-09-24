@@ -40,7 +40,7 @@ After completing this course, students should be able to:
     - Office hours: TBA, Reed Seminar Room Knight Library[(map)](https://map.uoregon.edu/83ce7039c)
 * *Lab*: Antoine Nzeyimana
     - Email: <anzeyima@uoregon.edu>
-    - Office hours: TBA, Reed Seminar Room Knight Library[(map)](https://map.uoregon.edu/83ce7039c)
+    - Office hours:  Fridays 11:00am to 12:00pm, Reed Seminar Room Knight Library[(map)](https://map.uoregon.edu/83ce7039c)
 
 #### Texts
 
