@@ -33,7 +33,7 @@ After completing this course, students should be able to:
 #### Instructors
 
 * *Course/lecture*: David Richey
-    - Email: <richey.david.j@gmail.com>
+    - Email: <drichey@uoregon.edu>
     - Office hours: MW 10-11 am, 245 Columbia [(map)](https://map.uoregon.edu/73706a822)
 * *Lab*: Riley Anderson
     - Email: <roa@uoregon.edu>
