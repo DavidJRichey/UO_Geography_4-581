@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lecture 4: Coordinate systems and projections</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 { font-family: 'Yanone Kaffeesatz'; font-weight: normal; }
+      .red { color: #fa0000; }
+      .white { color: #f3f3f3; }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .footnote { position: absolute; bottom: 1em; font-size: 0.5em;}
+      .image-10 img { width: 10%; }
+      .image-20 img { width: 20%; }
+      .image-30 img { width: 30%; }
+      .image-40 img { width: 40%; }
+      .image-50 img { width: 50%; }
+      .image-60 img { width: 60%; }
+      .image-70 img { width: 70%; }
+      .image-80 img { width: 80%; }
+      .image-90 img {width: 90%;}
+      .image-100 img {width: 100%;}
+      .image-110 img {width: 110%;}
+      .image-120 img {width: 120%;}
+      .inverse {
+        background: #272822;
+        color: #777872;
+        <!--text-shadow: 0 0 20px #333;-->
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+      /* Two-column layout */
+      .left-column { width: 45%; float: left; }
+      .right-column { width: 45%; float: right; }
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+
+name: base
+layout: true
+.footnote[GIScience I, Fall 2018]
+
+---
+
+class: inverse, middle
+# Lecture 4: Coordinate systems and projections
+
+---
+
+## GIS as process
+
+1. Locate entities in the world.
+
+2. **Represent the entities digitally.**
+
+3. Describe the entities.
+
+4. Process, integrate, analyze.
+
+5. Communicate the results.
+
+6. Audience: Interpret, make decisions, give feedback.
+
+---
+
+## Coordinate system
+
+A system for georeferencing used to represent locations by their position in *geometric* space.
+
+Coordinate systems are made up of the following components:
+
+1. A measurement framework.
+2. Units of measurement.
+3. A representative model of the Earth (ellipsoid).
+4. A set of control points with known geometric relationship to the reference ellipsoid (datum).
+
+* A 'geographic' coordinate system has a measurement framework with coordinates that measure angles from the Earth's center.
+* A 'projected' coordinate system is one where the measurement framework represents a conversion of the spherical location to a 'planimetric' (flat) location.
+  * In this case, we should include a fifth component to these coordinate systems: a projection.
+
+But first, let's consider geographic coordinate systems.
+
+---
+
+## Measurement framework: longitude/latitude
+
+* Outer boundary of plane through the center that lies perpendicular to Earth's rotational axis is the *equator*.
+  * Outer boundary of a parallel plane a given distance from the equator is called a *parallel*.
+  * Points on a parallel share the same latitude.
+  * Distance of degrees between parallells is constant: 111.321 km per degree.
+* Outer boundary of a plane that includes the rotational axis is a *meridian*.
+  * Points on a meridian share the same longitude.
+  * Distance of degrees between meridians is **not** constant.
+* [video](https://www.youtube.com/watch?v=MjDqhLUzCpE)
+
+.image-60[![http://www.justtrails.com/tag/latitude-and-longitude/](media/Parallels-and-Meridians.jpg)]
+
+
+
+???
+
+* Meridian distance: there are ways, involves trignometry.
+
+---
+
+## Units of measurement: Degrees
+
+* Historically, common to record as `Degrees, Minutes, Seconds` of angle.
+  * `123° 42' 20" W, 44° 0' 22" N`
+  * Called *sexagismal* (60-based). Used in angles, times.
+
+* More common today to use `Decimal Degrees`.
+  * `-123.7056°, 44.00611°`
+  * Notice DD often uses negative for W/S, treating 0°, 0° as a graph axis.
+
+* Convert DMS to DD: degrees + minutes/60 + seconds/3600
+
+---
+
+## Shape of the Earth
+
+* Defining meridians and parallels by the rotational axis allows us to apply them to any rotating object, no matter the shape.
+* Convenient, since the Earth is not a perfect sphere.
+
+.left-column[
+.image-100[![https://timeandnavigation.si.edu/multimedia-asset/geoid](media/540-geoid_-_nga.jpg)]
+(heights exaggerated)
+]
+.right-column[
+* Bumpy, complex irregular shape called a *geoid*.
+  * Bulges around the equator; flattened at the poles - caused by centrifugal forces acting on planet's mass.
+  * Earth's mass is not distributed evenly, so bumpy.
+* Fun fact: without things like tides, currents, salinity, air pressure, etc. water would cover everything blue in image.
+]
+
+---
+
+## Representative model: Ellipsoid
+
+Difficult to define coordinates like longitude/latitude on a geoid, though.
+
+To simplify calculations, it's better to use an idealized mathematical representation of the geoid.
+
+* Ellipsoid (spheroid).
+
+.image-80[![http://www.geography.hunter.cuny.edu/~jochen/GTECH361/lectures/lecture04/concepts/04%20-%20Understanding%20spheroids.html](media/image001.gif)]
+
+---
+
+## Control Points: Datum
+
+From these control points, we can find distance, area, direction between locations on the Earth.
+
+* Amazingly, ellipsoids can vary quite a bit.
+  * Advances in math & measuring the Earth's mass/shape.
+  * Newer ones are pretty similar.
+  * Datums do get minor updates (can't stop plate tectonics).
+* Datum shift: the slight variation when converting between datums.
+  * Important to not forget when using data with different datums.
+
+![http://lp360.com/newsletter/December2014/December2014_2.html](media/TS_Fig3.jpg)
+
+???
+
+* Technically, the datum is the combination of the reference ellipsoid and the control points.
+* Big ones around here: WGS84 (all GPS), NAD83 + derivatives (most gov).
+
+---
+
+## Projections
+
+Why flatten the Earth?
+
+* Common mediums of storage are flat: paper, equal grids (field), photos.
+* Convenience: easy to conceptualize and **see**; geometry vs. trignometry.
+* Historic data collection methods used local flatness for location: surveying, etc.
+
+A projection is the mathematical transformation converting spherical coordinate (longitude/latitude) to a flat *cartesian* coordinate system-
+
+---
+
+## Projections by surface
+
+![http://www.geog.ucsb.edu/~dylan/mtpe/geosphere/topics/map/map1.html](media/projections.jpg)
+
+???
+
+* Planar also commonly called *Azimuthal*.
+* Not going to get into, but there are hybrids and other funky surface types.
+
+---
+
+## Projections by preserved property
+
+Most projections minimize distortion of a geometric property.
+
+* Conformal: Preserves angles (general shape).
+
+* Equal-area: Preserves area.
+
+* Equidistant: Preserves distance from fixed point or line.
+
+* Retroazimuthal: Preserves direction from fixed location.
+
+* Gnomonic: Preserves no property - converts great circles to straight lines.
+  * Great circle: Outer edge of a plane that passes through the center of a sphere.
+    * Great circle section between any two points is the shortest path of travel.
+
+* 'Compromise': Preserves no one property - balances between distortions.
+
+---
+
+## In-class activity: Comparing projections
+
+* Put your name (including last) on a piece of paper.
+
+* For each of the upcoming projection examples, write the following information as we discuss them in class
+  1. Projection name.
+  2. Describe the shape of the graticule (the lines of parallels and meridians). Squared? Divergent? Curved? Meridians meet at poles?.
+  3. Why use this projection?
+
+All images are from Wikipedia, which has some of the best explanations for projections.
+
+---
+
+## Conformal: Lambert conformal conic
+
+.image-90[![https://en.wikipedia.org/wiki/Lambert_conformal_conic_projection](media/Lambert_conformal_conic_projection_SW.jpg)]
+
+???
+
+1. Lambert conformal conic.
+2. Not parallel, but meet at north pole and fan out at consistent angles.
+3. Lines approximate great circles at short enough distances.
+  * Aeronautical charts.
+  * Common in government-specified projected coordinate systems: US State Plane, India, EU/INSPIRE.
+
+---
+
+## Conformal: Mercator (cylindrical)
+
+.image-90[![https://en.wikipedia.org/wiki/Mercator_projection](media/Mercator_projection_SW.jpg)]
+
+???
+
+1. Mercator (cylindrical).
+2. Parallel, do not meet at poles.
+3. Lines have constant bearing/direction: good for navigation.
+
+* Transverse Mercator: rotates the cylinder 90 degrees. High accuracy measurements when within a few degrees of parallel + constant bearing.
+
+---
+
+## Equal-area: Goode homolosine (pseudocylindrical)
+
+.image-90[![https://en.wikipedia.org/wiki/Goode_homolosine_projection](media/Goode_homolosine_projection_SW.jpg)]
+
+???
+
+1. Goode homolosine (pseudocylindrical).
+2. Not parallel, meet at poles.
+3. Actually two different projections in midlatitudes (Sinusoidal) and at poles (Mollweide).
+  * Avoids increasing distortion away from the reference lines.
+  * Excellent area preservation makes good do distribution maps.
+
+---
+
+## Equidistant: Azimuthal equidistant (planar)
+
+.image-90[![https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection](media/Azimuthal_equidistant_projection_SW.jpg)]
+
+???
+
+1. Azimuthal equidistant (planar).
+2. Not parallel, but fan out at equal angles; meet at pole that's showing.
+3. Useful for showing distances from a point of interest. Also...
+
+---
+
+## Equidistant: Azimuthal equidistant (planar)
+
+![https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection](media/Emblem_of_the_United_Nations.svg)
+
+---
+
+## Retroazimuthal: Craig retroazimuthal (planar)
+
+.image-90[![https://en.wikipedia.org/wiki/Craig_retroazimuthal_projection](media/Craig_projection_SW.jpg)]
+
+???
+
+1. Craig retroazimuthal (planar).
+2. Parallel, do not meet at poles.
+3. Consider the centerpoint, and why one would wish to know the direction to there from elsewhere.
+
+---
+
+## Gnomonic
+
+.image-80[![https://en.wikipedia.org/wiki/Gnomonic_projection](media/Gnomonic_projection_SW.jpg)]
+
+???
+
+1. Gnomonic
+2. Not parallel, fanning out at equal angles. Meet at visible pole.
+3. Useful anywhere you would like to easily see shortest routes.
+
+---
+
+## 'Compromise': Dymaxion/Fuller (icosahedral)
+
+.image-90[![https://en.wikipedia.org/wiki/Dymaxion_map](media/Dymaxion_2003_animation_small1.gif)]
+
+???
+
+1. Dymaxion, or Fuller (icosahedron 20-sided polyhedron, then unfolded; sort of planar).
+2. Longitudes are doing all sorts of things here.
+3. Minimizes area/shape distortion well on each triangle face, allowing for comparison in varied areas on the globe.
+
+* I recommend checking out more about Buckminster Fuller; guy was nuts about triangles on shapes.
+
+---
+
+## Relax...
+
+It's more likely that you'll be making maps/analysis at more local or regional scale, rather than a world (or even continental scale).
+
+* At local scales, most of any distortion is minimal within the working area of the projected coordinate system.
+  * Even using Mercator: have you ever had a problem with distortion with online map services?
+
+* Understanding the concepts of projections & coordinate systems can help you avoid pitfalls, but so long as you use appropriate ones to your area of interest, you'll be fine.
+
+<!--
+  https://xkcd.com/977/
+  http://courses.umass.edu/nrc592g-cschweik/pdfs/Class_3_Georeferencing_concepts.pdf
+  http://lp360.com/newsletter/December2014/December2014_2.html
+  http://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/projection-basics-for-gis-professionals.htm
+  https://en.wikipedia.org/wiki/Map_projection#Projections_by_preservation_of_a_metric_property
+  https://www.nationalgeographic.org/activity/investigating-map-projections/
+  http://www.progonos.com/furuti/MapProj/Normal/CartProp/cartProp.html
+-->
+</textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
