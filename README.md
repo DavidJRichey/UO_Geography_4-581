@@ -135,7 +135,7 @@ Graduate students will have two additional components to their final project. Th
   * Mon October 1 — Lecture 3: Spatial representation; georeferencing.
   * Wed October 3 — Lecture 4: Coordinate systems and projections.
 * **Lab**:
-  * Lab 2: Projections.
+  * [Lab 2: Projections.](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_2.html)
 
 #### Week 3
 
