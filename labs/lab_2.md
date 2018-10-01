@@ -12,7 +12,7 @@ Understanding projections and spatial data types, and how they are handled in Ar
 
 #### Prerequisites
 
-This excercise builds on skills practiced in Lab 1, inlcuding basic knowledge of how to create an ArcMap document, how to add data and other elements to it, and how to create a shareable document to turn in.
+This exercise builds on skills practiced in Lab 1, including basic knowledge of how to create an ArcMap document, how to add data and other elements to it, and how to create a shareable document to turn in.
 
 
 #### References & Links
@@ -46,7 +46,7 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 ### Part 1 - Map Instructions
 
-Reminder: Save often! it is a good idea to save frequently. You may even want to Save As and give sequential filelenames so that you could revert to a previous version if you make a mistake that you cannot undo or if the ArcMap document gets corrupted.
+Reminder: Save often! it is a good idea to save frequently. You may even want to Save As and give sequential file names so that you could revert to a previous version if you make a mistake that you cannot undo or if the ArcMap document gets corrupted.
 
 ##### Read [*Using data frames*](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-arcmap/using-data-frames.htm) from the ArcMap documentation site.
 
