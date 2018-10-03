@@ -201,8 +201,8 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * None.
 * **Lecture**:
-  * Mon November 12 — Lecture 14: Project Mangement.
-  * Wed November 14 — Test 2 (covers lectures 7-14).
+  * Mon November 12 — Lecture 14: Guest lecturer: Adam Lake.
+  * Wed November 14 — Lecture 15: Project Mangement.
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (continued from previous week).
 
@@ -211,8 +211,8 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * *TBA*.
 * **Lecture**:
-  * Mon November 19 — TBA
-  * Wed November 21 — Lecture 15: Wrap-up.
+  * Mon November 19 — Test 2 (covers lectures 7-14).
+  * Wed November 21 — Lecture 16: Wrap-up.
 * **Lab**:
   * Final project: Work on in lab session.
 
