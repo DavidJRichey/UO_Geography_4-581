@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lecture 5: Geospatial data models</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 { font-family: 'Yanone Kaffeesatz'; font-weight: normal; }
+      .red { color: #fa0000; }
+      .white { color: #f3f3f3; }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .footnote { position: absolute; bottom: 1em; font-size: 0.5em;}
+      .image-10 img { width: 10%; }
+      .image-20 img { width: 20%; }
+      .image-30 img { width: 30%; }
+      .image-40 img { width: 40%; }
+      .image-50 img { width: 50%; }
+      .image-60 img { width: 60%; }
+      .image-70 img { width: 70%; }
+      .image-80 img { width: 80%; }
+      .image-90 img {width: 90%;}
+      .image-100 img {width: 100%;}
+      .image-110 img {width: 110%;}
+      .image-120 img {width: 120%;}
+      .inverse {
+        background: #272822;
+        color: #777872;
+        <!--text-shadow: 0 0 20px #333;-->
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+      /* Two-column layout */
+      .left-column { width: 45%; float: left; }
+      .right-column { width: 45%; float: right; }
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+
+name: base
+layout: true
+.footnote[GIScience I, Spring 2017]
+
+---
+
+class: inverse, middle
+# Lecture 5: Geospatial data models
+
+---
+
+## GIS as process
+
+1. Locate entities in the world.
+
+2. **Represent the entities digitally.**
+
+3. **Describe the entities.**
+
+4. Process, integrate, analyze.
+
+5. Communicate the results.
+
+6. Audience: Interpret, make decisions, give feedback.
+
+.left-column[
+ .image-100[![Longley et al 2015](media/Longley_et_al_Figure_7.1.jpg)]
+]
+
+---
+## Data model
+
+"A data model is a set of constructs for for describing and representing selected aspects of the real world in a computer."
+
+* Data model is where we design how representations and descriptions are to be stored in the GIS.
+
+* Note: This is different than a *Spatial Model*/*GIS Model*, which we will be discussing later in the term.
+
+---
+## Data models: Levels of abstraction
+
+.left-column[
+.image-120[![https://www.pinterest.com/tolgaarac/wo/](media/googledk_model_abstraction.jpg)]
+]
+.right-column[
+Example: computer disk drives.
+* Conceptual: Letter drives, files & folders.
+* Logical: Partitions, blocks & journals.
+* Physical: Disk media, electromagnetic switches.
+]
+
+---
+## Data models: Levels of abstraction (cont.)
+
+.image-100[![http://www.wikixbrl.info/index.php?title=Guidelines_for_Data_Point_Modeling](media/Levels_of_data_oriented_modelling.jpg)]
+
+---
+## Conceptual data model
+
+* Conceptual model (should be) independent: lower levels can make changes without affecting it.
+  * Example: Changing file formats (logical).
+  * User of of the data shouldn't care, so long as they're getting their report/map/document.
+* Takeaway is that there is a relationship between how data is stored and how users interact with it.
+  * Data is abstracted to match the system's formats, but still reflect the conceptual level.
+* Often represented as labelled shapes with lines/arrows representing relationships (entity-relationship diagram).
+
+![http://gisweb.massey.ac.nz/topic/DatabaseDesign/lectures/ermodelling.html](media/er_diagram3.jpg)
+
+---
+## Geospatial (logical) data models
+
+![https://www.slideshare.net/esambale/raster](media/raster-1-728.jpg)
+
+???
+
+* Though conceptual and physical are important in their own way, we're going to focus on the types of logical spatial data models.
+* The textbook lists more (p. 154), but the two primary model types are raster and vector.
+
+---
+## Raster data model
+
+* A pattern of uniform cells over a rectangular area (grid).
+* The location of each cell is defined by an index of its row and column (i.e., vertical and horizontal placement in grid).
+
+.image-100[![https://desktop.arcgis.com/en/arcmap/latest/manage-data/geodatabases/raster-basics.htm](media/GUID-885FD35E-8680-4FFE-A3D7-76E473F31B76-web.gif)]
+
+---
+## Raster cells
+
+* Each cell has a value with a sampled attribute from the location.
+* One value per cell.
+  * Values are numbers.
+  * One-value rule can be bent with class attributes, related tables, multiple related rasters.
+
+.image-70[![https://www.slideshare.net/esambale/raster](media/raster-5-728.jpg)]
+
+---
+## Raster values
+
+* 1 cell, 1 value is quite powerful for mathematical calculations between rasters.
+  * "Map algebra": grid addition/subtraction etc.
+  * Neighborhood - kernels.
+  * Cost accumulation.
+
+.left-column[
+.image-100[![http://www.geography.hunter.cuny.edu/~jochen/GTECH361/lectures/lecture11/concepts/Map%20algebra.htm](media/image001.gif)]
+]
+.right-column[
+.image-120[![https://sites.google.com/a/udel.edu/apec480-s15/a3](media/cost_distance.png)]
+]
+
+---
+## Vector data model
+
+* A geometric representation (features) of an entity.
+* Location of each feature is defined by an ordered set of coordinates tracing the geometry in the coordinate system.
+  * Usually 2-dimensional (x- & y-coordinates); can have a third (z-coordinate).
+
+![http://www.geography.hunter.cuny.edu/~jochen/GTECH361/lectures/lecture05/concepts/03%20-%20Geographic%20data%20models.html](media/image001_2.gif)
+
+---
+## Vector features
+
+* Simple features: no stored relationships between features.
+* Topological features: defined relationships between features are stored.
+  * Historically was the dominant feature type (saved space in the underlying system).
+  * Making a bit of a comeback on the web.
+  * Useful in other ways: network connectivity, adjacency, editing speed, data quality check.
+
+.image-80[![https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s08-data-models-for-gis.html](media/b50c0b3b34b539df30b11820df0b8ec7.jpg)]
+
+---
+### Vector features (cont.)
+
+* Point feature: Single coordinate.
+  * No measureable dimension.
+* (Poly)line feature: An ordered sequence of points.
+  * Can measure length.
+  * Called **poly**line because geometry definition of a line straight; polylines are ordered sets of line segments.
+* Polygon features: A sequence of closed polylines.
+  * Can measure length (perimeter) and area.
+  * Why do polygons need a sequence of polylines? "Donut holes."
+
+![http://www.restore.ac.uk/geo-refer/52611cwors00y00000000.php](media/Concepts%20-%20geographical%20objects%20in%20GIS.png)
+
+---
+## Vector attributes
+
+* Features can have as many attribute values as the physical model can hold.
+* Attribute can be any type of value the physical model provides.
+
+.image-60[![http://neondataskills.org/R/shapefile-attributes-in-R/](media/Attribute_Table.png)]
+
+---
+## Raster vs. Vector
+
+It would be quite simple to see the choice between these two data models as equivalent to discrete vs. continuous representations. That conflation is more often than not true, but let's explore possible inversions of that.
+
+* Elevation.
+* Local parks and playgrounds.
+* World cities.
+* Land cover in a rural area.
+
+* Discuss & write down:
+  1. Discrete object or continuous field phenomena?
+  2. Raster or vector?
+  3. If raster, what sort of value would you record in the cell? Would you need more than one raster, or an associated value table? If vector, would it be a point, line, or polygon feature?
+  4. Counterpoint: can you think of a reason or way to represent this phenomena in the opposite data model you chose for #2? Be thoughtful & creative here.
+
+---
+## In-class activity: Raster vs. Vector
+
+It would be quite simple to see the choice between these two data models as equivalent to discrete vs. continuous representations. That conflation is more often than not true, but let's explore possible inversions of that.
+
+* Get in groups of three or four; put your names (include last as well) on a piece of paper.
+* Choose one of the real-world phenomena below:
+  * Elevation.
+  * Local parks and playgrounds.
+  * World cities.
+  * Land cover in a rural area.
+* Discuss & write down:
+  1. Discrete object or continuous field phenomena?
+  2. Raster or vector?
+  3. If raster, what sort of value would you record in the cell? Would you need more than one raster, or an associated value table? If vector, would it be a point, line, or polygon feature?
+  4. Counterpoint: can you think of a reason or way to represent this phenomena in the opposite data model you chose for #2? Be thoughtful & creative here.
+
+After some time, we'll go over each of these with the whole class.
+
+</textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
