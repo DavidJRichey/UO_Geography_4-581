@@ -145,7 +145,7 @@ Graduate students will have two additional components to their final project. Th
   * Mon October 8 — Lecture 5: Geospatial data models.
   * Wed October 10 — Lecture 6: Attribute data—Types & queries.
 * **Lab**:
-  * Lab 3: Spatial Data Types and Querying Values.
+  * [Lab 3: Spatial Data Types and Querying Values.](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_3.html)
 
 #### Week 4
 
