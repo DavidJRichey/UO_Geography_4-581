@@ -12,7 +12,7 @@ Spatial data is commonly represented in either of two formats: raster and vector
 
 #### Prerequisites
 
-This excercise builds on skills practiced in Labs 1-2.
+This exercise builds on skills practiced in Labs 1-2.
 
 
 #### References & Links
@@ -48,11 +48,11 @@ Note: The questions to answer in this lab relate to the process you complete in 
 
 ### Part 1 - Map Instructions
 
-Reminder: Save often! it is a good idea to save frequently. You may even want to Save As and give sequential filelenames so that you could revert to a previous version if you make a mistake that you cannot undo or if the ArcMap document gets corrupted.
+Reminder: Save often! it is a good idea to save frequently. You may even want to Save As and give sequential filele names so that you could revert to a previous version if you make a mistake that you cannot undo or if the ArcMap document gets corrupted.
 
 #### 1.1 - Vector Data
 
-Unlike in previous labs, you will not need to download the vector data for this part. Instead, you will connect to the UO Library's server to acess the data directly.
+Unlike in previous labs, you will not need to download the vector data for this part. Instead, you will connect to the UO Library server to access the data directly.
 
 ##### Create a new Lab3 folder and ArcMap document.
 
@@ -118,7 +118,7 @@ Raster datasets only have a single value for each pixel (ignoring concepts like 
 
 1. Use the *Identify* tool again to inspect some raster pixel values across the map. Feel free to zoom in for more accuracy in choosing pixels.
   - The *Pixel value* is the actual attribute value at that point.
-  - The *Stretched value* is the conversion of the pizel value into a position on the color ramp (from 0 to 255 from left-to-right). The details of the conversion are defined in the *Stretch Type*
+  - The *Stretched value* is the conversion of the pixel value into a position on the color ramp (from 0 to 255 from left-to-right). The details of the conversion are defined in the *Stretch Type*
 
 #### 1.3 - Design layout & add context map.
 
@@ -136,7 +136,7 @@ Context maps are useful for readers to understand the map's location in a greate
 1. Insert a new data frame.
 2. Add the countries dataset to the new data frame.
 3. Symbolize the countries with a neutral fill color.
-4. Set the data frame's projection to be an area-preserving world projection.
+4. Set the data frame projection to be an area-preserving world projection.
 5. Adjust the size of the data frame in the layout to fit in available space.
   - It's certainly possible to have the context data frame overlap the main map or be within a data-free section of it. Use your judgement regarding whether that makes sense design-wise. You will need to change the data frame background fill color, though (it's clear at first).
 6. Zoom to the extent of the data (worldwide).
@@ -148,7 +148,7 @@ Context maps are useful for readers to understand the map's location in a greate
   2. Add a new grid, and step through the 'wizard' to set up how it is displayed. Lines every 30 degrees is recommended.
 8. Add an extent indicator to show the location of your main map in the context map.
   1. Open the context map data frame properties, and go to the *Extent Indicators* tab.
-  2. Move the data frame for the main map into the *Show extent indicator for these data frames* box.
+  2. Move the data frame for the main map into the *Show extent indicator for these data frames*  box.
   3. If you wish, you may choose to adjust the options for the extent indicator when they appear below the box.
 
 ##### Add elements for the maps & layout.
