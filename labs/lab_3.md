@@ -42,7 +42,7 @@ Submit the documents at your earliest convenience before the start of the next l
 
 #### Steps
 
-For best results, read through all instructions before starting the lab.
+For best results, read through all instructions before starting the lab. Note, some reference (data) file locations may be incorrect. Check with your lab instructor for current locations of lab datasets.
 
 Note: The questions to answer in this lab relate to the process you complete in these steps. You may find it helpful to answer questions as you create the map rather than waiting until the end. Whichever method you prefer, be sure to contemplate *what you are actually doing* while completing these steps. Remember: the skill is not in following directions (or memorizing them), it's understanding what is happening.
 
