@@ -142,8 +142,8 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * Longley et al Chapter 7.
 * **Lecture**:
-  * Mon October 8 — Lecture 5: Geospatial data models.
-  * Wed October 10 — Lecture 6: Attribute data—Types & queries.
+  * [Mon October 8 — Lecture 5: Geospatial data models.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_05.html)
+  * [Wed October 10 — Lecture 6: Attribute data—Types & queries.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_06.html)
 * **Lab**:
   * [Lab 3: Spatial Data Types and Querying Values.](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_3.html)
 
