@@ -169,7 +169,7 @@ Type, style, and place the following elements in the layout.
 2. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
-### Part 3 - Write-up
+### Part 2 - Write-up
 
 **Note:** Some of the questions in the write-up relate to the actions you take in making your map; you may find it helpful to answer those questions as you go, rather than waiting until after completion.
 
