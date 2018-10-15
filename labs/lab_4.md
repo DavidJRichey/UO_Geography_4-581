@@ -296,4 +296,3 @@ Type, style, and place the following elements in the layout.
 3. The *Extract Values to Points* tool was run after the original cities dataset had been filtered to include on the cities in Washington. What difference would it have made to perform those actions in the opposite order?
 4. Briefly describe the pattern that you see in the distribution of precipitation in Washington (1-2 sentences).
 5. Briefly describe the pattern that you see in the distribution of precipitation in the Olympic Peninsula. 
-6. Review the *Table of Contents* styles (tabs directly above the layer contents of the TOC panel). List the four styles, and suggest a reason each style would be useful.
