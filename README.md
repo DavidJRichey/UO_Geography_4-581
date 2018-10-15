@@ -153,9 +153,9 @@ Graduate students will have two additional components to their final project. Th
   * Longley et al Chapter 13 (sections 13.3.4+ optional); Chapter 14 (section 14.4+ unnecessary).
 * **Lecture**:
   * Mon October 15 — Test 1 (covers lectures 1-6).
-  * Wed October 17 — Lecture 7: Combining data—Attribute joins & spatial analysis.
+  * [Wed October 17 — Lecture 7: Combining data—Attribute joins & spatial analysis.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_06.html)
 * **Lab**:
-  * Lab 4: Spatial Selection and Attribute Queries.
+  * [Lab 4: Spatial Selection and Attribute Queries.](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_4.html)
 
 #### Week 5
 
