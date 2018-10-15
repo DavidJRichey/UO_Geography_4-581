@@ -87,10 +87,10 @@ Discover and download the datasets via the link provided. Be sure to note the da
   - Filename: citiesx010g_shp_nt00962.tar.gz.
   - **Note**: Unlike the other downloads, this isn't stored in a zipfile archive. Rather, it's stored in a tar-archive which is then in a gzip-archive. This is a common Unix/Linux method of archiving collections of files. Windows doesn't natively read from these kinds of archives, though; to extract this archive, use the 7-Zip File Manager application (twice, it's double-archived), which you can find in the start menu of the SSIL computers.
 * Annual Precipitation for 2015
- - Link: http://www.prism.oregonstate.edu/recent/
-- Filename: PRISM_ppt_stable_4kmM3_2015_all_asc.zip
-- Raster file PRISM_ppt_stable_4kmM3_2015_asc.asc
-- **Note**: examine all the PRISM raster files. What do you speculate the other rasters represent? How would you find out with certainty?
+  - Link: http://www.prism.oregonstate.edu/recent/
+  - Filename: PRISM_ppt_stable_4kmM3_2015_all_asc.zip
+  - Raster file PRISM_ppt_stable_4kmM3_2015_asc.asc
+  - **Note**: examine all the PRISM raster files. What do you speculate the other rasters represent? How would you find out with certainty?
 
 ##### Create a new ArcMap document.
 
