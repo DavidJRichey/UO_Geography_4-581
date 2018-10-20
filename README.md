@@ -100,10 +100,11 @@ Tests will not be cumulative, and will directly relate to content covered in the
 
 #### Final Project
 
-* [Proposal (PDF)](https://)—[(DOCX)](https://)—[(ODT)](https://jblairpdx.github.io/GIScience_I/final_project/proposal.odt)—[(RTF)](https://)
-* [Topic Ideas](https://)
-* [Worksheet (PDF)](https://)—[(DOCX)](https://)—[(ODT)](https://)—[(RTF)](https://)
-* [Worksheet—Peer Feedback](https://)
+
+* [Topic Ideas](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/topic_ideas.md)
+* [Worksheet (PDF)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/worksheet.pdf)—[(DOCX)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/worksheet.docx)—[(RTF)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/worksheet.rtf)
+* [Worksheet—Peer Feedback](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/worksheet_peer_feedback.pdf)
+* [Proposal (PDF)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/proposal.pdf)—[(DOCX)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/proposal.docx)—[(RTF)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/proposal.rtf)
 
 In lieu of a lab in the final weeks of the term and cumulative final, students will undertake a final project, to be completed by the end of the time a final exam would be scheduled if we had one (Wednesday December 5th at 10:15 am).
 
@@ -191,8 +192,8 @@ Graduate students will have two additional components to their final project. Th
   * Esri Training Matters, "Use the Five-Step GIS Analysis Process."
     * [https://blogs.esri.com/esri/esritrainingmatters/2009/10/08/use-the-five-step-gis-analysis-process/](https://blogs.esri.com/esri/esritrainingmatters/2009/10/08/use-the-five-step-gis-analysis-process/)
 * **Lecture**:
-  * Mon November 5 — Lecture 12: Data collection—Where do I get data?
-  * Wed November 7 — Lecture 13: Final project—Introduction & worksheet peer review.
+  * Mon November 5 — Lecture 12: Final project—Introduction & worksheet peer review.
+  * Wed November 7 — Lecture 13: Data collection—Where do I get data?
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (due in two weeks).
 
@@ -203,6 +204,7 @@ Graduate students will have two additional components to their final project. Th
 * **Lecture**:
   * Mon November 12 — Lecture 14: Guest lecturer: Adam Lake.
   * Wed November 14 — Lecture 15: Project Mangement.
+  * Final project proposal due.
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (continued from previous week).
 
@@ -222,7 +224,6 @@ Graduate students will have two additional components to their final project. Th
   * None.
 * **Lecture**:
   * Mon November 26 — Lecture 16: Graduate student project presentations.
-    * Final project proposal due.
   * Wed November 26 — Lecture 17: Graduate student project presentations.
 * **Lab**:
   * Final project: Work on in lab session.
