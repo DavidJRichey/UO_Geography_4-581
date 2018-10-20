@@ -167,7 +167,7 @@ Graduate students will have two additional components to their final project. Th
   * Mon October 22 — Lecture 8: Spatial analysis—A look in the toolbox.
   * Wed October 24 — Lecture 9: Spatial modeling.
 * **Lab**:
-  * Lab 5: Site Selection—Tsunami Relief Center.
+  * [Lab 5: Site Selection—Tsunami Relief Center.](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_4.html)
 
 #### Week 6
 
