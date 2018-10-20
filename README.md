@@ -214,7 +214,7 @@ Graduate students will have two additional components to their final project. Th
   * *TBA*.
 * **Lecture**:
   * Mon November 19 — Test 2 (covers lectures 7-14).
-  * Wed November 21 — Lecture 16: Wrap-up.
+  * Wed November 21 — Lecture 16: Wrap-up: Infographics and data dashboards, web deployment of geospatial data.
 * **Lab**:
   * Final project: Work on in lab session.
 
