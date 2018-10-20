@@ -204,7 +204,7 @@ Graduate students will have two additional components to their final project. Th
 * **Lecture**:
   * Mon November 12 — Lecture 14: Guest lecturer: Adam Lake.
   * Wed November 14 — Lecture 15: Project Mangement.
-  * Final project proposal due.
+  * Final project proposal due 12pm Wednesday November 14.
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (continued from previous week).
 
