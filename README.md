@@ -166,7 +166,7 @@ Graduate students will have two additional components to their final project. Th
   * Longley et al Chapter 15.
 * **Lecture**:
   * Mon October 22 — Lecture 8: Spatial analysis—A look in the toolbox.
-  * [Wed October 24 — Lecture 9: Spatial modeling.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_07.html)
+  * [Wed October 24 — Lecture 9: Spatial modeling.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_09.html)
 * **Lab**:
   * [Lab 5: Site Selection—Tsunami Relief Center.](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_5.html)
 
