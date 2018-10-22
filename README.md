@@ -165,7 +165,7 @@ Graduate students will have two additional components to their final project. Th
     * [https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/an-overview-of-the-analysis-toolbox.htm](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/an-overview-of-the-analysis-toolbox.htm)
   * Longley et al Chapter 15.
 * **Lecture**:
-  * [Mon October 22 — Lecture 8: Spatial analysis—Geoprocessing with ArcGIS Toolbox.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_08.html)
+  * [Mon October 22 — Lecture 8: Spatial analysis—Geoprocessing with ArcGIS Toolbox.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_07.html)
   * [Wed October 24 — Lecture 9: Spatial modeling.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_09.html)
 * **Lab**:
   * [Lab 5: Site Selection—Tsunami Relief Center.](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_5.html)
