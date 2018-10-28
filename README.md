@@ -101,10 +101,10 @@ Tests will not be cumulative, and will directly relate to content covered in the
 #### Final Project
 
 
-* [Topic Ideas](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/topic_ideas.md)
-* [Worksheet (PDF)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/worksheet.pdf)—[(DOCX)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/worksheet.docx)—[(RTF)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/worksheet.rtf)
-* [Worksheet—Peer Feedback](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/worksheet_peer_feedback.pdf)
-* [Proposal (PDF)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/proposal.pdf)—[(DOCX)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/proposal.docx)—[(RTF)](https://github.com/DavidJRichey/UO_Geography_4-581/blob/master/final_project/proposal.rtf)
+* [Topic Ideas](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/topic_ideas.md)
+* [Worksheet (PDF)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet.pdf)—[(DOCX)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet.docx)—[(RTF)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet.rtf)
+* [Worksheet—Peer Feedback](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet_peer_feedback.pdf)
+* [Proposal (PDF)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/proposal.pdf)—[(DOCX)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/proposal.docx)—[(RTF)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/proposal.rtf)
 
 In lieu of a lab in the final weeks of the term and cumulative final, students will undertake a final project, to be completed by the end of the time a final exam would be scheduled if we had one (Wednesday December 5th at 10:15 am).
 
