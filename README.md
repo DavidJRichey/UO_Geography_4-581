@@ -223,8 +223,8 @@ Graduate students will have two additional components to their final project. Th
 * **Reading**:
   * None.
 * **Lecture**:
-  * Mon November 26 — Lecture 16: Graduate student project presentations.
-  * Wed November 26 — Lecture 17: Graduate student project presentations.
+  * Mon November 26 — Lecture 17: Graduate student project presentations.
+  * Wed November 26 — Lecture 18: Graduate student project presentations.
 * **Lab**:
   * Final project: Work on in lab session.
 
