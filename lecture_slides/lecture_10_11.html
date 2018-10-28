@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lecture 10 & 11: Maps</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz); @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic); body {font-family: 'Droid Serif';} h1, h2, h3 {font-family: 'Yanone Kaffeesatz'; font-weight: normal;} .remark-code, .remark-inline-code {font-family: 'Ubuntu Mono';} .gray {color: #c0c0c0;} .red {color: #fa0000;} .white {color: #f3f3f3;} .left-column {width: 45%; float: left;} .right-column {width: 45%; float: right;} .footnote {position: absolute; bottom: 1em; font-size: 0.5em;} .image-10 img {width: 10%;} .image-20 img {width: 20%;} .image-30 img {width: 30%;} .image-40 img {width: 40%;} .image-50 img {width: 50%;} .image-60 img {width: 60%;} .image-70 img {width: 70%;} .image-80 img {width: 80%;} .image-90 img {width: 90%;} .image-100 img {width: 100%;} .image-110 img {width: 110%;} .image-120 img {width: 120%;} .inverse {background: #272822; color: #777872;} .inverse h1, .inverse h2 {color: #f3f3f3; line-height: 0.8em;}
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+class: inverse, middle
+# Lecture 10 & 11: Maps
+.footnote[GIScience I, Fall 2018]
+
+---
+class: middle
+## Reminder:
+
+1. Final project documents are on the class materials website:
+  * [Proposal](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/proposal.pdf)
+  * [Topic Ideas](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/topic_ideas.html)
+  * [Worksheet](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet.pdf)
+  * [Worksheet—Peer Feedback](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet_peer_feedback.pdf)
+2. Class Mon November 5th (Lecture 12: Final project—Introduction & worksheet peer review) will be entirely dedicated to talking about the final project.
+3. Complete & bring worksheet to class Mon November 5th; we will be using it for in-class peer feedback.
+
+---
+## GIS as process
+
+1. Locate entities in the world.
+
+2. Represent the entities digitally.
+
+3. Describe the entities.
+
+4. Process, integrate, analyze.
+
+5. **Communicate the results.**
+
+6. Audience: Interpret, make decisions, give feedback.
+
+---
+## Part 1: Maps defined
+1. Definitions.
+2. Function of maps/goals of map design.
+3. Types of maps.
+4. Map series.
+
+## Part 2: (Thematic) map design
+1. Controlling factors.
+2. Composition—key elements.
+3. Symbolization—visual variables.
+4. Data classification.
+5. Thematic map types—symbolization methods.
+6. Multivariate mapping.
+7. Visual hierarchy.
+8. Visualization considerations.
+
+---
+class: inverse, middle
+# Part 1: Maps defined
+
+---
+## Definitions
+
+#### Cartography
+
+> "Cartography is concerned with the art, science, and techniques of making maps and charts."
+
+*Longley, et al. (2015)*
+
+> "Cartography is the discipline dealing with conception, production, dissemination and study of maps."
+
+*International Cartographic Association (1997)*
+
+#### "Map"
+
+> "A map is a symbolized image of geographical reality, representing selected features or characteristics, resulting from the creative effort of its author's execution of choices, and is designed for use when spatial relationships are of primary relevance."
+
+*International Cartographic Association (1997)*
+
+---
+## Function of maps
+
+Maps are the most prominent type of GIS output.
+
+* Storage and communication	mechanisms of geographic information.
+  * Historically, maps **were** the GIS system.
+
+* Communicate results of analyses.
+
+* Communicate	spatial-temporal relationships among phenomena within a map/among maps.
+
+* Provide decision support through clear communication.
+
+* Create or reinforce a particular message ("tell a story").
+  * Even incorrect or improper messages.
+
+---
+## Types of maps
+
+* Reference map.
+  * Emphasis on location.
+  * All data at same level of importance.
+  * Subtype—special-purpose map: a reference map, but made for specific types of users/uses.
+* Thematic map.
+  * Emphasis on specific geographic theme.
+  * Thematic data given emphasis in the visualization.
+  * Theme serves to promote analysis results, relationships, messages to user's attention.
+
+.left-column[
+.image-100[![http://mapsof.net/oregon/oregon-reference-map](media/oregon_reference_map.png)]
+]
+.right-column[
+.image-120[![http://www.popvssoda.com/](media/PopVsSoda.png)]
+]
+
+---
+### Special purpose: Topographic map
+
+Elevation & the natural/physical features featured for reference.
+
+.image-100[![Longley et al 2015 Figure 11.1](media/longley_4e_fig_11_01.jpg)]
+
+---
+### Special purpose: Navigation chart/street map
+
+Aspects relating to water, air, or road travel featured for reference.
+
+.image-90[![Longley et al 2015 Figure 11.2](media/longley_4e_fig_11_02.jpg)]
+
+---
+### Special purpose: Cadastral/utility/insurance/etc. map
+
+Aspect relating to the specific use featured for reference.
+
+.image-100[![https://apps.lanecounty.org/TaxMap/ViewFile.aspx?type=TM&id=1145](media/Lane_County_Cadastral_Map.png)]
+
+---
+## Map series
+
+A collection of reference or thematic maps created in the same way, but varying in the extent covered.
+* Same data, symbolization, map elements, (usually) same scale.
+* Examples:
+  * University of Oregon Atlas of Trees (InfoGraphics Lab).
+  * Oregon Scenic Bikeways (Oregon State Parks).
+
+---
+## Map series: Oregon Scenic Bikeways
+
+(Oregon Parks & Recreation Dept.)
+
+.left-column[.image-120[![Oregon Scenic Bikeways](media/OPRD_Covered_Bridge_SB.png)]]
+.right-column[.image-120[![Oregon Scenic Bikeways](media/OPRD_Sisters_Smith_Rock_SB.png)]]
+
+---
+class: inverse, middle
+# Part 2: Map design
+
+---
+### Seven controlling factors for map design
+
+(as conceived by Arthur Robinson et al)
+
+* Purpose.
+  * Determines what to map and how to portray that information.
+
+* Reality.
+  * The phenomena being mapped will affect design choices (e.g. orientation of landforms).
+
+* Available data.
+  * The representation and data model affects how one can symbolize.
+  * Where data was collected & how good/detailed it is can limit map etxtent or expression of pattern.
+
+* Map scale.
+  * Affects the amount of detail visible/viewable.
+  * Could limit method & type of symbolization.
+
+---
+## Seven controlling factors (cont.)
+
+* Audience.
+  * Expert vs. general audience.
+  * Also: disability can affect audience needs (visual impairment; color blindness).
+
+* Conditions of use.
+  * Indoor vs. outdoor (lighting).
+  * Full concentration vs. distracted.
+
+* Technical limits.
+  * The display medium.
+    - Print vs. digital; print/display quality.
+    - Media size: phone vs. laptop vs. projection screen.
+    - Data storage: website loading, local disk, in the graphic.
+  * The available technology for composing the map.
+
+---
+## Who is the map for? (audience)
+
+1. Experts.
+  * Less peripheral information explaining the map content and symbols.
+  * More information, more variables, more detail.
+  * Follow conventions of field.
+
+2. Novices (general public?)
+  * More peripheral information on map explaining details and symbols.
+  * Less information, fewer variables, less detail.
+  * Follow map design conventions, enhance comprehension for novice map readers.
+  * Not about 'dumbing-down' the map; it's about keeping your audience engaged by focusing on fewer variables.
+
+---
+## Composition—key elements
+
+.image-100[![Longley et al, 2015 Figure 11.9](media/longley_4e_fig_11_09.jpg)]
+
+---
+.image-80[![Longley et al, 2015 Figure 11.9](media/longley_4e_fig_11_09.jpg)]
+
+**Map body**
+* Principal focus of the map. Give space and symbolization appropriate to its significance.
+* Can be more than one, if needing to compare between areas, themes, times.
+
+---
+.image-80[![Longley et al, 2015 Figure 11.9](media/longley_4e_fig_11_09.jpg)]
+
+**Inset or overview map(s)**
+* Optional, but useful to highlight part of map in greater detail, or provide the larger context for the map area.
+
+---
+.image-80[![Longley et al, 2015 Figure 11.9](media/longley_4e_fig_11_09.jpg)]
+
+**Title**
+* Concisely identify map's subject. Usually describes the area the map covers and the data theme.
+* Main map body can share a title with the entire map document.
+
+---
+.image-80[![Longley et al, 2015 Figure 11.9](media/longley_4e_fig_11_09.jpg)]
+
+**Legend**
+* List of items represented on the map and how they're symbolized.
+* Should be complete. Can omit some symbolization when the context is obvious (e.g. water features when not theme focus).
+
+---
+.image-80[![Longley et al, 2015 Figure 11.9](media/longley_4e_fig_11_09.jpg)]
+
+**Scale**
+* Indicate relative size and distance between the map and the real-world.
+* Display as scale bar or representative fraction/text.
+
+---
+.image-80[![Longley et al, 2015 Figure 11.9](media/longley_4e_fig_11_09.jpg)]
+
+**Direction indicator**
+* Directional symbol (north arrow, compass, etc.) good when direction is consistent in map.
+* Graticule good when direction distorts on map.
+
+---
+.image-80[![Longley et al, 2015 Figure 11.9](media/longley_4e_fig_11_09.jpg)]
+
+**Map metadata**
+* Map projection.
+* Date of creation/last update.
+* Author.
+* Data sources.
+  * These are important to know: trustworthiness; credit where is due; currency check.
+  * Omission is a judgment call: relevance; terms of use; media constraints.
+
+---
+## Symbolization—visual variables
+
+* Visual variables are categories of visual "clues" to indicate on the map differences (or relationships) between values.
+
+* These are the drivers of the thematic symbolization methods.
+
+* Key is to choose visual variables that highlight the variation in the data.
+
+---
+<!--.image-70[![Longley et al, 2015 Figure 11.10](media/longley_4e_fig_11_10.jpg)]-->
+.image-100[![Meacham - after Bertin](media/Meacham_Visual_Variables.png)]
+
+---
+## Colors schemes on thematic maps
+
+* Three visual variables related to color: hue, lightness, saturation. Most color schemes are a mixture of these.
+* Difficult to design ad hoc schemes that are perceptually distinct **and** look nice.
+  * Reference online resources for them: I highly recommend ColorBrewer [(http://colorbrewer2.org)](http://colorbrewer2.org).
+* Considerations:
+  * Colorblindness (red-green CB affects ~8% of males).
+  * Display medium (print, screen).
+  * Measurement scale:
+.image-80[![https://axismaps.github.io/thematic-cartography/articles/color_schemes.html](media/color_schemes.jpg)]
+
+---
+## Data classification
+
+* Classification takes large numbers of (ordinal, interval, ratio) values and groups them into ranges/classes/bins.
+
+* Why? Simplifies the spectrum into easily distinguishable groups (easier to reference legend values to classes).
+
+* Basics:
+  * Keep number of distinct classes low: 3-7 classes is the sweet-spot for maximizing perception & comprehension.
+  * Number of classes may need to be adjusted; check histogram when symbolizing.
+  * Choose classification method that highlights patterns you wish to emphasize.
+
+---
+### Data classification methods
+
+* Equal interval — equal-sized classes (e.g. 1-10, 11-20, 21-30...).
+  * Best for: data spread evenly across entire range.
+* Quantiles — equal number of features in each class.
+  * Best for: showing clear ranking-groups of features.
+  * Problem: class breaks can fall between features with no significant value difference.
+
+.image-70[![Longley, etl al 2015](media/longley_4e_fig_11_14_crop2.jpg)]
+
+---
+### Data classification methods
+
+* Standard deviation — classes represent standard deviations from mean.
+  * Assumes normal distribution, uses st. dev. stat to classify.
+  * Best for: normal distributions; emphasizing nearness to mean value.
+  * Problem: not actual values; above & below mean values combine.
+* Natural breaks — minimizes in-class variation, maximizes between-class.
+  * Best for: data with distinct clusters that can align with classes.
+  * Problem: each dataset have own unique breaks between classes; bad for cross-map comparison.
+
+.image-70[![Longley, etl al 2015](media/longley_4e_fig_11_14_crop1.jpg)]
+
+---
+## Thematic map types—symbolization methods
+
+* Choropleth map.
+
+* Isopleth map.
+
+* Dot density map.
+
+* Dot location map.
+
+* Graduated symbols map.
+
+* Flow map.
+
+---
+### Choropleth map
+
+* Predefined areas (enumeration units) are shaded to differentiate data values.
+* Good for:
+  * Data attached to meaningful enumeration units (e.g. political boundaries, census tracts).
+  * Quantitative data that is (or can be) standardized into rates/ratios per areal unit.
+  * Enumeration unit level is meaningful to data, or is of a fairly standard size.
+
+.image-110[![US Census Atlas, 2007](media/US_Census_Atlas_Choropleth.png)]
+
+---
+.image-100[![Longley, at al 2015 Figure 11.3](media/longley_4e_fig_11_03a.jpg)]
+
+---
+### Isopleth map
+
+* Areas and shading defined by data values.
+* Good for:
+  * Displaying continuous data as vector polygons (elevation, precipitation, temperature).
+
+.image-80[![US Census Atlas, 2007](media/US_Census_Atlas_Isoplethic_Map.png)]
+
+---
+### Dot density map
+
+* Can be can be 1:1 dot:feature, or 1:many.
+* Can be made in applications by converting enumeration polygons to representative dots 'randomized' across their feature area.
+* Good for:
+  * Representing raw data values instead of standardized rates & ratios.
+  * Showing dispersion or clustering of events/phenomena.
+
+
+.image-80[![US Census Atlas, 2007](media/US_Census_Atlas_Dot_Density_Map.png)]
+
+---
+(IDV Solutions https://www.flickr.com/photos/idvsolutions/15148472607/)
+.image-100[![IDV Solutions https://www.flickr.com/photos/idvsolutions/8182119174/](media/8182119174_5db607b60a_k.jpg)]
+
+---
+### Dot location map
+
+* 1:1 version of a dot density map, but points represent points-in-time of one or more features.
+* Good for:
+  * Showing movement/change over time.
+ 
+.image-80[![US Census Atlas, 2007](media/US_Census_Atlas_Dot_Location_Map.png)]
+
+---
+(InfoGraphics Lab, 2016)
+.image-80[![InfoGraphics Lab, 2016](media/Moose_175.png)]
+
+---
+### Graduated symbol map
+
+* Size (area) of symbol represents increase/decrease in value; values classified into a set number of groups.
+  * Variant: proportional symbol (continuous values, unclassed).
+* Not only works for interval/ratio number values, but with ordinal categorical data (e.g. high-medium-low).
+* Good for:
+  * Connecting value measurements in legend to symbols.
+  * Symbolizing point data, or polygon data where the feature sizes distort visual hierarchy (small places with high values get their due).
+
+.image-80[![US Census Atlas, 2007](media/US_Census_Atlas_Graduated_Symbol_Map.png)]
+
+---
+### Flow map
+
+* Good for:
+  * Showing origin, destination, and direction of flow for one or more entities.
+
+.image-80[![US Census Atlas, 2007](media/US_Census_Atlas_Flow_Map.png)]
+
+---
+
+(IDV Solutions https://www.flickr.com/photos/idvsolutions/15148472607/)
+.image-100[![IDV Solutions https://www.flickr.com/photos/idvsolutions/15148472607/](media/15148472607_4ef1e245d3_k.jpg)]
+
+---
+## Multivariate map
+
+More than one visual variable is chosen to symbolize a single collection of features, each variable representing a different attribute's values.
+
+.image-100[![https://www.e-education.psu.edu/geog486/node/1871](media/bivariate_hue_size_0.png)]
+
+---
+.image-100[![https://www.e-education.psu.edu/geog486/node/1871](media/hue_value_choropleth.png)]
+
+---
+### Multivariate map series: UO Atlas of Trees
+
+(InfoGraphics Lab)
+.image-90[![UO Atlas of Trees](media/UO_Atlas_of_Trees.png)]
+
+---
+## Visual hierarchy
+
+The arrangement or presentation of elements in a way that implies importance.
+
+* Considerations:
+  * Size and placement of map elements.
+  * Visual variables apply to all parts of media, not just map symbols.
+  * Map symbolization.
+  * Use or omission of borders or neatlines.
+
+* Use available space without adding clutter.
+  * Space in margins.
+  * Available/unimportant space in map.
+
+* Emphasizing relationships and difference in visual hierarchy:
+  * **C**ontrast — **R**epetition — **A**lignment — **P**roximity
+
+---
+.image-100[![Longley, et al 2015 Figure 11.3b](media/longley_4e_fig_11_03b.jpg)]
+
+---
+.image-100[![OregonPRD Scenic Bikeways](media/OPRD_Covered_Bridge_SB.png)]
+
+---
+## Better mapping...
+
+Credit to The British Cartographic Society for the following slides...
+
+* Even if you have checked and checked again it is always worth one final check before the map is signed off as complete
+
+* The more you work on a map the less you will see the errors — it is the obvious ones which will get through, such as the misspelling of familiar words.
+
+* There's no magic program for making the perfect map.
+  * If there were, we'd just program computers to make them.
+  * This is where the "art & craft" part of the cartography definition come in.
+  * You get better by understanding the conventions, paying attention to detail, and **doing**.
+
+---
+## Better mapping in 5 minutes
+
+Check...
+
+* your map title — is it brief and directly related to the map?
+
+* the scale of the map — is it correct?
+
+* the units of your scale bar — are they rounded? (e.g. 5km, not 4.85km) and easy to understand?
+
+* the legend — do all the symbols in your legend match the map?
+
+* the inset(s) — does each have a title and scale bar?
+
+---
+## Better mapping in 15 minutes
+
+As well as the above, check...
+
+* does the map fit the page or the screen?
+
+* does your legend state the right units (e.g. density per km²)?
+
+* your spelling.
+
+* the visual balance — do the important parts naturally stand out?
+
+* the alignment of objects — do lines created by edges (of elements, neatlines, and whitespace) flow between elements, or do they shift or break up?
+
+---
+## Better mapping in 50 minutes
+
+As well as the above, check...
+
+* get a second opinion on your map design.
+
+* if it's a web map, try it on different platforms.
+
+* if it's a printed map, try printing it on different printers/paper.
+
+* print it and proof it off screen (even if digital).
+
+---
+.image-80[![Map Design & Production Class Promo](media/Advanced_Cartography2.png)]
+
+</textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>var slideshow = remark.create();</script>
+  </body>
+</html>

@@ -179,10 +179,10 @@ Graduate students will have two additional components to their final project. Th
   * Buckley, "Make Maps People Want to Look At" in ArcUser, Winter 2012.
     * [https://www.esri.com/news/arcuser/0112/files/design-principles.pdf](https://www.esri.com/news/arcuser/0112/files/design-principles.pdf)
 * **Lecture**:
-  * Mon October 29 — Lecture 10: Maps — Elements, symbolization, classification..
-  * Wed October 31 — Lecture 11: Maps II — Visualization & design..
+  * [Mon October 29 — Lecture 10: Maps — Elements, symbolization, classification.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_10_11.html)
+  * [Wed October 31 — Lecture 11: Maps II — Visualization & design.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_10_11.html#26)
 * **Lab**:
-  * Lab 6: Working with Raster Data—Elevation.
+  * [Lab 6: Working with Raster Data—Elevation.](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_6.html)
 
 #### Week 7
 
