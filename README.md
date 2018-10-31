@@ -101,7 +101,7 @@ Tests will not be cumulative, and will directly relate to content covered in the
 #### Final Project
 
 
-* [Topic Ideas](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/topic_ideas.md)
+* [Topic Ideas](https://davidjrichey.github.io/UO_Geography_4-581/final_project/topic_ideas.html)
 * [Worksheet (PDF)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet.pdf)—[(DOCX)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet.docx)—[(RTF)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet.rtf)
 * [Worksheet—Peer Feedback](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/worksheet_peer_feedback.pdf)
 * [Proposal (PDF)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/proposal.pdf)—[(DOCX)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/proposal.docx)—[(RTF)](https://DavidJRichey.github.io/UO_Geography_4-581/final_project/proposal.rtf)
