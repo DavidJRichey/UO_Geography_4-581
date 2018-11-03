@@ -34,7 +34,7 @@ This excercise builds on skills practiced in Labs 1-6.
 #### To Turn In
 
 * Single-page map in Portable Document Format (PDF).
-* **A short report** (3-4 pages) describing the GIS analysis conducted and the conclusions you found.
+* **A short report** (2-3 pages) describing the GIS analysis conducted and the conclusions you found.
 
 Put a copy of each document:
 
@@ -61,11 +61,10 @@ Discover and download the datasets via the link provided. Be sure to note the da
 
 1. Open a web browser, and navigate to the [Oregon Spatial Data Library](http://spatialdata.oregonexplorer.info/geoportal/).
 2. Browse or search for the following datasets:
-  * *Oregon Historic Vegetation*: `historic_vegetation.zip`.
-  * *Oregon Ecoregions*: `ecoregion.zip`.
-  * *GAP Vegetation
+  * *Oregon Historic Vegetation*
+  * *Oregon Ecoregions*
+  * *Oregon Actual Vegetation Map - 1992*
 3. Download them to your lab folder, and extract their contents.
-4. Make a copy of the commas-separated value (CSV) file `R:\GEOG481_3\Class_Data\Lab7\gapcodes.csv` in your `Lab7` folder.
 
 Comma-separated value files are text files that are formatted to represent a table of attribute values. They use commas as "separators", dividing each row (represented as individual lines in the text) into columns/fields. Usually, the first row-line holds the field names. I encourage you to open up the file in both the Notepad and Excel applications, to see a raw and formatted version of the data stored within.
 
