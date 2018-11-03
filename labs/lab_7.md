@@ -63,6 +63,7 @@ Discover and download the datasets via the link provided. Be sure to note the da
 2. Browse or search for the following datasets:
   * *Oregon Historic Vegetation*: `historic_vegetation.zip`.
   * *Oregon Ecoregions*: `ecoregion.zip`.
+  * *GAP Vegetation
 3. Download them to your lab folder, and extract their contents.
 4. Make a copy of the commas-separated value (CSV) file `R:\GEOG481_3\Class_Data\Lab7\gapcodes.csv` in your `Lab7` folder.
 
