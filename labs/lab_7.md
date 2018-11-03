@@ -14,7 +14,7 @@ This lab explores attribute joins and polygon overlays using vegetation layers t
 
 #### Prerequisites
 
-This excercise builds on skills practiced in Labs 1-6.
+This exercise builds on skills practiced in Labs 1-6.
 
 
 #### References & Links
@@ -51,7 +51,7 @@ For best results, read through all instructions before starting the lab.
 
 ### Part 1 - Map Instructions
 
-Reminder: Save often! it is a good idea to save frequently. You may even want to Save As and give sequential filelenames so that you could revert to a previous version if you make a mistake that you cannot undo or if the ArcMap document gets corrupted.
+Reminder: Save often! it is a good idea to save frequently. You may even want to Save As and give sequential file names so that you could revert to a previous version if you make a mistake that you cannot undo or if the ArcMap document gets corrupted.
 
 #### 1.1 - Data
 
@@ -65,8 +65,6 @@ Discover and download the datasets via the link provided. Be sure to note the da
   * *Oregon Ecoregions*
   * *Oregon Actual Vegetation Map - 1992*
 3. Download them to your lab folder, and extract their contents.
-
-Comma-separated value files are text files that are formatted to represent a table of attribute values. They use commas as "separators", dividing each row (represented as individual lines in the text) into columns/fields. Usually, the first row-line holds the field names. I encourage you to open up the file in both the Notepad and Excel applications, to see a raw and formatted version of the data stored within.
 
 Additionally, as part of your map design you should locate additional data layers to provide context. For example, you may want to use Oregon and adjacent state boundaries, county boundaries, rivers, roads, cities, etc. for that purpose. You've been introduced to a numbers of good resources for these purposes: Oregon Spatial Data Explorer, UO MAP Library Learning Commons, and Natural Earth Data to name a few. Use your judgment and what you've been shown in class to choose helpful data layers for your map.
 
@@ -143,6 +141,8 @@ Tip: To remove a joined attribute table, ricght-click on the layer with the join
 
 ##### Create a 'lookup' table similar to `gapcodes.csv` to match historic vegetation to landscape types.
 
+Comma-separated value files are text files that are formatted to represent a table of attribute values. They use commas as "separators", dividing each row (represented as individual lines in the text) into columns/fields. Usually, the first row-line holds the field names. I encourage you to open up the file in both the Notepad and Excel applications, to see a raw and formatted version of the data stored within.
+
 Unlike the modern vegetation, the historic vegetation dataset does not carry the vegetation codes (`VEG_CODE`), or use the same names of the modern version. So we'll need to create a lookup table specifically to match historic vegetation names to landscape types.
 
 1. Open the attribute table of the historic vegetation layer.
@@ -206,7 +206,7 @@ The products of this lab will be a one-page map layout to accompany a short docu
 
 ##### Make a PDF copy of your map.
 
-1. Filename: `Lab6_Mt_St_Helens.pdf`.
+1. Filename: `Lab7_VegetationChange.pdf`.
 2. Take a look at your exported PDF through a PDF viewing application or a web browser. **Always look at your output!** Both common and unusual errors slip past creators when they don't look at their outputs.
 
 
@@ -214,7 +214,7 @@ The products of this lab will be a one-page map layout to accompany a short docu
 
 In contrast to previous weeks, you will write a short report instead of answering questions provided here. The report should be 3-4 pages double-spaced. 
 
-The content should describe the GIS analysis conducted and the results of that analysis. It should be organized in a way that is easy to follow, *avoids excessive technical detail and jargon* (or defines any jargon used), and uses complete sentences.
+The content should describe the GIS analysis conducted and the results of that analysis. It should be organized in a way that is easy to follow, *avoids excessive technical detail and jargon* (or defines any jargon used), and **uses complete sentences**.
 
 The report may include a description of steps where you made decisions (e.g. what selection method was used, how you solved problems assigning landscape types, etc.), or where you had to be creative in finding solutions/avoiding pitfalls.
 
