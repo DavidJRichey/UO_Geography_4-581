@@ -195,7 +195,7 @@ Graduate students will have two additional components to their final project. Th
   * Mon November 5 — Lecture 12: Final project—Introduction & worksheet peer review.
   * Wed November 7 — Lecture 13: Data collection—Where do I get data?
 * **Lab**:
-  * Lab 7: Vegetation Land Cover Report (due in two weeks).
+  * [Lab 7: Vegetation Land Cover Report (due in two weeks).](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab_6.html)
 
 #### Week 8
 
