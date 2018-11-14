@@ -206,7 +206,9 @@ Graduate students will have two additional components to their final project. Th
   * [Wed November 14 — Lecture 15: Project Management.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_14.html)
   * Final project proposal due 5 pm Friday November 16.
 * **Lab**:
-  * Lab 7: Vegetation Land Cover Report (continued from previous week).
+  * [Lab 7: Vegetation Land Cover Report V2 (continued from previous week).](https://DavidJRichey.github.io/UO_Geography_4-581/labs/Lab7_VegetationLandscapesReportV2.pdf)
+  * [Lab 7: Vegetation Land Cover Supplimental Explanation](https://DavidJRichey.github.io/UO_Geography_4-581/labs/lab7_V2_Explanation.pdf)
+  * [Lab 7: Vegetation Land Cover Oak Proportion Lost Table](https://DavidJRichey.github.io/UO_Geography_4-581/labs/OakProportionLostTable.dbf)
 
 #### Week 9
 
