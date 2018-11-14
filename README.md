@@ -203,8 +203,8 @@ Graduate students will have two additional components to their final project. Th
   * None.
 * **Lecture**:
   * Mon November 12 — Lecture 14: Guest lecturer: Adam Lake.
-  * Wed November 14 — Lecture 15: Project Management.
-  * Final project proposal due 12pm Wednesday November 14.
+  * [Wed November 14 — Lecture 15: Project Management.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_14.html)
+  * Final project proposal due 5 pm Friday November 16.
 * **Lab**:
   * Lab 7: Vegetation Land Cover Report (continued from previous week).
 
