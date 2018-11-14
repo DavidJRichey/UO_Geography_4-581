@@ -211,10 +211,12 @@ Graduate students will have two additional components to their final project. Th
 #### Week 9
 
 * **Reading**:
-  * *TBA*.
+  * [How The Times Makes Those Addictive Election Maps](https://www.nytimes.com/2018/11/04/reader-center/how-we-cover-elections-interactive-maps.html)
+  * [538](https://fivethirtyeight.com)
+  * [Data is beautiful](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples)
 * **Lecture**:
-  * Mon November 19 — Test 2 (covers lectures 7-14).
-  * Wed November 21 — Lecture 16: Wrap-up: Infographics and data dashboards, web deployment of geospatial data.
+  * Mon November 19 — Lecture 15: Wrap-up: Infographics and data dashboards, web deployment of geospatial data.
+  * Wed November 21 — Test 2 (covers lectures 7-14).
 * **Lab**:
   * Final project: Work on in lab session.
 
