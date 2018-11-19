@@ -217,7 +217,7 @@ Graduate students will have two additional components to their final project. Th
   * [538](https://fivethirtyeight.com)
   * [Data is beautiful](https://www.tableau.com/learn/articles/best-beautiful-data-visualization-examples)
 * **Lecture**:
-  * [Mon November 19 — Lecture 15: Wrap-up: Infographics and data dashboards, web deployment of geospatial data.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_14.html)
+  * [Mon November 19 — Lecture 15: Wrap-up: Infographics and data dashboards, web deployment of geospatial data.](https://DavidJRichey.github.io/UO_Geography_4-581/lecture_slides/lecture_15.pdf)
   * Wed November 21 — Test 2 (covers lectures 7-14).
 * **Lab**:
   * Final project: Work on in lab session.
