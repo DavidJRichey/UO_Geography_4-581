@@ -112,7 +112,7 @@ The project will be not unlike the labs you will have completed, except the data
 
 In week 7, we will discuss the project in detail, and do an in-class activity related to fine-tuning ideas. A 'proposal', outlining your intentions for the content of the project is due at the Wednesday of week 8.
 
-Graduate students will have two additional components to their final project. The first is a description of the analysis you did (4-10 pages), or a related literature review to the subject matter. Be sure to provide citations and reasoning for your methodology. The second is to present your project briefly in the last week of class.
+Graduate students will have two additional components to their final project. The first is a description of the analysis you did (4-10 pages; i.e. a longer paper than the base undergrduate assignment, not a second paper), or a related literature review to the subject matter. Be sure to provide citations and reasoning for your methodology. The second is to present your project briefly in the last week of class.
 
 
 ## Schedule
